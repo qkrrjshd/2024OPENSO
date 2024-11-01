@@ -1,11 +1,11 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"math/rand"
+)
 
 func main() {
-
-	var i int = 55
-	fmt.Printf("value i : %d/n", i)
-	fmt.Print("value i : %d/n", i)
-	fmt.Println("value i : %d/n", i)
+	target := rand.Intn(100) + 1
+	fmt.Printf("%d\n", target)
 }

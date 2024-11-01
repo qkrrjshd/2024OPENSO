@@ -1,0 +1,60 @@
+깃, 깃허브 관령 명령어들
+
+리눅스 명령어
+
+ls : 현재 디랙토리의 파일목록들을 나타내는 명령어
+-. -a : 히든 파일을 포함한 모든 파일과 디랙토리
+cat : 파일의 내용을 출력하는 명령어
+touch : 파일 크기가 0바이트인 빈파일 생성
+cd : 디랙토리 이동할때 사용하는 명령어
+-. cd [상대경로/절대경로], 입력한 경로로 이동
+pwd : 현재 진행중인 디렉토리의 위치를 나타내는 명령어
+echo : 주어진 텍스트를 화면에 출력하는 명령어
+-. echo "내용" > 파일명 : echo출력내용으로 새로운 파일 생성, 기존파일 덮어쓰기
+-. echo "내용" >> 파일명 : echo출력내용으로 새로운 파일 생성, 기존파일 이어쓰기
+
+깃 명령어
+file 들의 tracking 상태 보기
+git status
+
+새로운 파일을 추가하거나 존재하는 파일 스테이징하고 커밋하기
+git add <파일> 새로운 파일 추가
+git commit -m “<메시지>” 이미있는 파일 스테이징
+
+저장소 초기화
+git init
+
+사용자명/이메일 설정
+git config - -global user.name “id”
+git config - -global user.email “이메일 주소”
+
+설정 정보 조회
+git config - -global - -list 
+
+모든 이력보기
+git log
+
+origin 저장소에서 합치지 않고 지역 브랜치로 변경 사항 가져오기
+git fetch
+
+원격 저장소에서 변경 사항을 가져와 현재 브랜치에 합치기
+git qull
+
+지역 브랜치를 원격 브랜치에 푸싱하기
+git push
+
+새로운 원격 저장소 지정하기
+git remote add <원격 저장소> <저장소 url>
+
+저장소 복제
+git clone <저장소 url>
+
+
+
+트러블슈팅
+conflict 트러블 슈팅
+
+go관련
+go mod init main
+go run main.go
+
